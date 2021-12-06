@@ -50,12 +50,11 @@
         <p>I'm a PhD student in Machine Learning at the University of Cambridge Computer Lab, 
         where I am supervised by Prof. Pietro Lió and Jeremy England. My research focuses on:</p>
         <ul>
-          <li>Modelling gene regulation using high-throughput genomics,</li>
-          <li>Latent Force Models,</li>
-          <li>Wishart Processes,</li>
-          <li>Stochastic Neural ODEs,</li>
-          <li>Graph machine learning,</li>
-          <li>Uncertainty and confidence estimation.</li>
+          <li>Differential equation models of genetic regulation;</li>
+          <li>Models of single-cell RNA, accessibility, and methylation;</li>
+          <li>Latent Force Models;</li>
+          <li>Stochastic Neural ODEs;</li>
+          <li>Graph machine learning.</li>
         </ul>
 
         <p>
@@ -92,14 +91,28 @@
     </div>
 
     <h4>Selected Publications</h4>
+    
+    <a href="https://arxiv.org/abs/2109.11851">
+      <b>Approximate Latent Force Model Inference</b>
+    </a>
+    <p>
+      Physically-inspired latent force models offer an interpretable alternative to purely data driven tools for inference in dynamical systems. They carry the structure of differential equations and the flexibility of Gaussian processes, yielding interpretable parameters and dynamics-imposed latent functions. However, the existing inference techniques associated with these models rely on the exact computation of posterior kernel terms which are seldom available in analytical form. Most applications relevant to practitioners, such as Hill equations or diffusion equations, are hence intractable. In this paper, we overcome these computational problems by constructing a variational solution to a general class of non-linear and parabolic partial differential equation latent force models. Further, we show that a neural operator approach can scale our model to thousands of instances, enabling fast, distributed computation.
+    </p>
+    <b>Moss, J. D.</b>, Opolka, F. L., Dumitrascu, D., Liò, P.<br>
+    <em>In Science-Guided AI Symposium at AAAI 2021.</em><br>
+    <em>Also in NeurIPS 2021 workshop on Machine Learning Learning and the Physical Sciences.</em><br>
+    <b><a href="https://arxiv.org/abs/2104.14290">Paper</a> </b>
+    
+    <br>
+    <hr>
     <a href="https://arxiv.org/abs/2104.14290">
       <b>Meta-learning using privileged information for dynamics</b>
     </a>
     <p>
       In the physical sciences, we often have access to structured knowledge in addition to raw observations of a system, such as the value of a conserved quantity or a description of an understood component. Taking advantage of the aggregation flexibility, we extend the Neural ODE Process model to use additional information within the Learning Using Privileged Information setting, and we validate our extension with experiments showing improved accuracy and calibration on simulated dynamics tasks.
     </p>
-    Day, B., Norcliffe, A., <b>Moss, J.</b>, & Liò, P.<br>
-    <em>In Learning to Learn and SimDL workshops at ICLR 2021</em><br>
+    Day, B., Norcliffe, A., <b>Moss, J. D.</b>, & Liò, P.<br>
+    <em>In ICLR 2021 workshops on Learning to Learn and SimDL.</em><br>
     <b><a href="https://arxiv.org/abs/2104.14290">Paper</a> </b>
     
     <br>
@@ -110,7 +123,7 @@
     <p>
       We introduce Neural ODE Processes (NDPs), a new class of stochastic processes determined by a distribution over Neural ODEs. By maintaining an adaptive data-dependent distribution over the underlying ODE, we show that our model can successfully capture the dynamics of low-dimensional systems from just a few data-points. At the same time, we demonstrate that NDPs scale up to challenging high-dimensional time-series with unknown latent dynamics such as rotating MNIST digits.
     </p>
-    Norcliffe, A., Bodnar, C., Day, B., <b>Moss, J.</b>, & Liò, P.<br>
+    Norcliffe, A., Bodnar, C., Day, B., <b>Moss, J. D.</b>, & Liò, P.<br>
     <em>In International Conference on Learning Representations. ICLR, 2021</em><br>
     <em>Also published as a <a href="https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_66.pdf">workshop paper</a> at NeurIPS workshop on Machine Learning and the Physical Sciences. NeurIPS, 2020</em><br>
     <b><a href="https://openreview.net/forum?id=27acGyyI1BY">Paper</a> | <a href="https://github.com/crisbodnar/ndp">Code</a></b>
@@ -122,14 +135,14 @@
     <p>
     </p>
     <p>
-      <b>Moss, J.</b>, and Liò, P. . Arxiv, 2020.
+      <b>Moss, J. D.</b>, and Liò, P. . Arxiv, 2020.
     </p>
     
 
     <h4>Talks</h4>
     <p>
       <ul>
-        <li>Feb 2021: <a href="http://talks.cam.ac.uk/talk/index/155344">AI Research Group Talks: Nerual ODE Processes</a></li>
+        <li>Feb 2021: <a href="http://talks.cam.ac.uk/talk/index/155344">AI Research Group Talks: Neural ODE Processes</a></li>
         <li>Nov 2020: AI Research Group Crit Session: Wishart Processes</a></li>
       </ul>
     </p>
